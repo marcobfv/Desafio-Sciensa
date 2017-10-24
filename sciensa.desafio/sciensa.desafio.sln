@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "sciensa.desafio.sfa.cliente", "sciensa.desafio.sfa.cliente\sciensa.desafio.sfa.cliente.sfproj", "{BA09893F-B58C-4722-B4A2-5E890B55C3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteStateful", "ClienteStateful\ClienteStateful.csproj", "{7C4FDFB3-BC8E-4B43-8731-D04FBF1BDF4F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.ActiveCfg = Debug|x64
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.Build.0 = Debug|x64
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.Deploy.0 = Debug|x64
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.ActiveCfg = Release|x64
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.Build.0 = Release|x64
+		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.Deploy.0 = Release|x64
+		{7C4FDFB3-BC8E-4B43-8731-D04FBF1BDF4F}.Debug|x64.ActiveCfg = Debug|x64
+		{7C4FDFB3-BC8E-4B43-8731-D04FBF1BDF4F}.Debug|x64.Build.0 = Debug|x64
+		{7C4FDFB3-BC8E-4B43-8731-D04FBF1BDF4F}.Release|x64.ActiveCfg = Release|x64
+		{7C4FDFB3-BC8E-4B43-8731-D04FBF1BDF4F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
