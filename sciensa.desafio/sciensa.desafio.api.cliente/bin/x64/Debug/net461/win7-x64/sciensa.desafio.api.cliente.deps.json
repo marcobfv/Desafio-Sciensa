@@ -21,7 +21,7 @@
   },
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "sciensa.desafio.api.cliente/1.0.0": {
+      "Sciensa.Desafio.API.Cliente/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
@@ -152,7 +152,7 @@
           "System.Xml.XPath.XDocument.Reference": "4.1.0.0"
         },
         "compile": {
-          "sciensa.desafio.api.cliente.exe": {}
+          "Sciensa.Desafio.API.Cliente.exe": {}
         }
       },
       "Microsoft.CSharp.Reference/4.0.0.0": {
@@ -1831,7 +1831,7 @@
       }
     },
     ".NETFramework,Version=v4.6.1/win7-x64": {
-      "sciensa.desafio.api.cliente/1.0.0": {
+      "Sciensa.Desafio.API.Cliente/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
@@ -1962,7 +1962,7 @@
           "System.Xml.XPath.XDocument.Reference": "4.1.0.0"
         },
         "runtime": {
-          "sciensa.desafio.api.cliente.exe": {}
+          "Sciensa.Desafio.API.Cliente.exe": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3044,7 +3044,7 @@
     }
   },
   "libraries": {
-    "sciensa.desafio.api.cliente/1.0.0": {
+    "Sciensa.Desafio.API.Cliente/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

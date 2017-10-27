@@ -7910,11 +7910,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\sciensa.desafio.api.cliente\\sciensa.desafio.api.cliente.csproj",
-      "projectName": "sciensa.desafio.api.cliente",
-      "projectPath": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\sciensa.desafio.api.cliente\\sciensa.desafio.api.cliente.csproj",
+      "projectUniqueName": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\Sciensa.Desafio.API.Cliente\\Sciensa.Desafio.API.Cliente.csproj",
+      "projectName": "Sciensa.Desafio.API.Cliente",
+      "projectPath": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\Sciensa.Desafio.API.Cliente\\Sciensa.Desafio.API.Cliente.csproj",
       "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\sciensa.desafio.api.cliente\\obj\\",
+      "outputPath": "C:\\projetos\\sciensa\\Desafio-Sciensa\\sciensa.desafio\\Sciensa.Desafio.API.Cliente\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

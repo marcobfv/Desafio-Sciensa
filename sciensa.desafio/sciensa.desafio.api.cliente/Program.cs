@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace sciensa.desafio.api.cliente
+namespace Sciensa.Desafio.API.Cliente
 {
     internal static class Program
     {
@@ -20,10 +20,10 @@ namespace sciensa.desafio.api.cliente
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
 
-                ServiceRuntime.RegisterServiceAsync("sciensa.desafio.api.clienteType",
-                    context => new cliente(context)).GetAwaiter().GetResult();
+                ServiceRuntime.RegisterServiceAsync("Sciensa.Desafio.API.ClienteType",
+                    context => new Cliente(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(cliente).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(Cliente).Name);
 
                 // Prevents this host process from terminating so services keeps running. 
                 Thread.Sleep(Timeout.Infinite);

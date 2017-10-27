@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "sciensa.desafio.sfa.cliente", "sciensa.desafio.sfa.cliente\sciensa.desafio.sfa.cliente.sfproj", "{BA09893F-B58C-4722-B4A2-5E890B55C3DE}"
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Sciensa.Desafio.SF.Cliente", "Sciensa.Desafio.SF.Cliente\Sciensa.Desafio.SF.Cliente.sfproj", "{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sciensa.desafio.api.cliente", "sciensa.desafio.api.cliente\sciensa.desafio.api.cliente.csproj", "{0944C238-8E5D-42EB-B407-67039ED33730}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sciensa.Desafio.API.Cliente", "Sciensa.Desafio.API.Cliente\Sciensa.Desafio.API.Cliente.csproj", "{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,22 +15,22 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.ActiveCfg = Debug|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.Build.0 = Debug|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Debug|x64.Deploy.0 = Debug|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|Any CPU.ActiveCfg = Release|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.ActiveCfg = Release|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.Build.0 = Release|x64
-		{BA09893F-B58C-4722-B4A2-5E890B55C3DE}.Release|x64.Deploy.0 = Release|x64
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Debug|x64.Build.0 = Debug|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Release|x64.ActiveCfg = Release|Any CPU
-		{0944C238-8E5D-42EB-B407-67039ED33730}.Release|x64.Build.0 = Release|Any CPU
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Debug|x64.ActiveCfg = Debug|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Debug|x64.Build.0 = Debug|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Debug|x64.Deploy.0 = Debug|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Release|Any CPU.ActiveCfg = Release|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Release|x64.ActiveCfg = Release|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Release|x64.Build.0 = Release|x64
+		{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}.Release|x64.Deploy.0 = Release|x64
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

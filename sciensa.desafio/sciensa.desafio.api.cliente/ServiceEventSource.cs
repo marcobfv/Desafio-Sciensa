@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Runtime;
 
-namespace sciensa.desafio.api.cliente
+namespace Sciensa.Desafio.API.Cliente
 {
-    [EventSource(Name = "MyCompany-sciensa.desafio.sfa.cliente-sciensa.desafio.api.cliente")]
+    [EventSource(Name = "MyCompany-Sciensa.Desafio.SF.Cliente-Sciensa.Desafio.API.Cliente")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();
