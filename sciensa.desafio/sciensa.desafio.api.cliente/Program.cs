@@ -21,9 +21,9 @@ namespace Sciensa.Desafio.API.Cliente
                 // an instance of the class is created in this host process.
 
                 ServiceRuntime.RegisterServiceAsync("Sciensa.Desafio.API.ClienteType",
-                    context => new Cliente(context)).GetAwaiter().GetResult();
+                    context => new ServiceCliente(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(Cliente).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(ServiceCliente).Name);
 
                 // Prevents this host process from terminating so services keeps running. 
                 Thread.Sleep(Timeout.Infinite);

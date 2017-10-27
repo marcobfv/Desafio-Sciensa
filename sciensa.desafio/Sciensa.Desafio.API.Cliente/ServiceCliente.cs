@@ -16,9 +16,9 @@ namespace Sciensa.Desafio.API.Cliente
     /// <summary>
     /// The FabricRuntime creates an instance of this class for each service type instance. 
     /// </summary>
-    internal sealed class Cliente : StatelessService
+    internal sealed class ServiceCliente : StatelessService
     {
-        public Cliente(StatelessServiceContext context)
+        public ServiceCliente(StatelessServiceContext context)
             : base(context)
         { }
 
