@@ -7,5 +7,16 @@ namespace Sciensa.Desafio.API.Cliente.Models
 {
     public class Conta
     {
+        public int Id { get; set; }
+
+        public int IdCliente { get; set; }
+
+        public int Agencia { get; set; }
+
+        public int Numero { get; set; }
+
+        public string Tipo { get; set; }
+
+        public decimal Saldo { get; set; }
     }
 }
