@@ -22,12 +22,12 @@ INICIANDO PROJETO
 - Executar o projeto(F5);
 - Aguardar o cluster do Service Fabric iniciar;
 - O Projeto WebAPI esta configurado na porta 8080;
-- O projeto Web para manipulaÁ„o dos dados esta rodando na porta 8855;
+- O projeto Web para manipula√ß√£o dos dados esta rodando na porta 8855;
 
-ApÛs conclus„o do registro das aplicaÁıes pelo Serice Fabric os seguintes links s„o funcionais:
+Ap√≥s conclus√£o do registro das aplica√ß√µes pelo Serice Fabric os seguintes links s√£o funcionais:
 
-- AplicaÁ„o WEB:
+- Aplica√ß√£o WEB:
 	http://localhost:8855/
 - WebAPI:
-	http://localhost:8080/api/cliente
-  	http://localhost:8080/api/conta
+	http://localhost:8080/api/cliente ;
+  	http://localhost:8080/api/conta ;
