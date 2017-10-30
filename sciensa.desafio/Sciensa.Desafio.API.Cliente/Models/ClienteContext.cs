@@ -42,7 +42,7 @@ namespace Sciensa.Desafio.API.Cliente.Models
             })
            .ToList();
 
-            if (result != null)
+            if (result != null || result.Count > 0)
                 return true;
 
             else

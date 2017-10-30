@@ -9,7 +9,7 @@ namespace Sciensa.Desafio.API.Cliente.Models
     {
         public ClienteModel()
         {
-            Conta = new List<ContaModel>();
+            Contas = new List<ContaModel>();
         }
 
         public int Id { get; set; }
@@ -20,6 +20,6 @@ namespace Sciensa.Desafio.API.Cliente.Models
 
         public string Endereco { get; set; }
 
-        public List<ContaModel> Conta { get; set; }
+        public List<ContaModel> Contas { get; set; }
     }
 }

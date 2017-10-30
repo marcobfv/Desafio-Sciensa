@@ -3,42 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Sciensa.Desafio.API.Cliente.Models;
 
 namespace Sciensa.Desafio.API.Cliente.Controllers
 {
     [Route("api/[controller]")]
     public class ContaController : Controller
     {
-        // GET api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "cli1", "Clie12" };
-        }
-
-        // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ContaModel Get(int id)
         {
-            return "com id";
+            return ContaContext.Contas.Where(it => it.Id.Equals(id)).FirstOrDefault();
         }
 
-        // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]ContaModel conta)
         {
+            ContaContext.IncluirConta(conta);
+
+            return new OkResult();
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public ActionResult Put(int id, [FromBody]ContaModel conta)
         {
+            var result = ContaContext.AtualizarConta(id, conta);
+
+            if (result)
+                return new OkResult();
+            else
+                return new NotFoundResult();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            var result = ContaContext.DeletarConta(id);
+
+            if (result)
+                return new OkResult();
+            else
+                return new NotFoundResult();
         }
     }
 }
