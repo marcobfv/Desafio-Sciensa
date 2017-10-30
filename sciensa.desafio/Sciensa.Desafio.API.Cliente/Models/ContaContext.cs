@@ -9,7 +9,6 @@ namespace Sciensa.Desafio.API.Cliente.Models
     {
         private static List<ContaModel> _contas;
         private static int _id = 1;
-        private static IEnumerable<object> _clientes;
 
         public static List<ContaModel> Contas
         {

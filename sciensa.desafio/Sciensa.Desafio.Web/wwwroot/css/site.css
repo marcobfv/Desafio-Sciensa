@@ -10,6 +10,10 @@ body {
     padding-right: 15px;
 }
 
+td {
+    white-space: nowrap;
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;

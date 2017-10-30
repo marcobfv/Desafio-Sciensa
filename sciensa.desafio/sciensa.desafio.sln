@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Sciensa.Desafio.SF.Cliente", "Sciensa.Desafio.SF.Cliente\Sciensa.Desafio.SF.Cliente.sfproj", "{05103AC9-3B6C-4DF7-BB83-DE0C33056C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sciensa.Desafio.API.Cliente", "Sciensa.Desafio.API.Cliente\Sciensa.Desafio.API.Cliente.csproj", "{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sciensa.Desafio.API.Cliente", "Sciensa.Desafio.API.Cliente\Sciensa.Desafio.API.Cliente.csproj", "{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sciensa.Desafio.Web", "Sciensa.Desafio.Web\Sciensa.Desafio.Web.csproj", "{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sciensa.Desafio.Web", "Sciensa.Desafio.Web\Sciensa.Desafio.Web.csproj", "{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

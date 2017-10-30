@@ -21,15 +21,25 @@ namespace Sciensa.Desafio.API.Cliente.Controllers
         [HttpGet("{id}")]
         public ClienteModel Get(int id)
         {
-            return ClienteContext.Clientes.Where(c => c.Id.Equals(id)).FirstOrDefault();
+            var cliente = ClienteContext.Clientes.Where(c => c.Id.Equals(id)).FirstOrDefault();
+            var contas = ContaContext.Contas.Where(c => c.IdCliente.Equals(id)).ToList();
+
+            if (contas != null)
+                cliente.Contas = contas;
+
+            return cliente;
         }
 
         [HttpPost("{*cliente}")]
         public IActionResult Post([FromBody]ClienteModel cliente)
         {
-            ClienteContext.IncluirCliente(cliente);
-
-            return new OkResult();
+            if (cliente != null)
+            {
+                ClienteContext.IncluirCliente(cliente);
+                return new OkResult();
+            }
+            else
+                return new BadRequestResult();
         }
 
         [HttpPut("{id}")]

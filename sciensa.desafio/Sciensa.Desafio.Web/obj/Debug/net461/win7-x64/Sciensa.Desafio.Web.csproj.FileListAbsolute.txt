@@ -318,3 +318,4 @@ C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\obj\Debu
 C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\obj\Debug\net461\win7-x64\Sciensa.Desafio.Web.AssemblyInfo.cs
 C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\obj\Debug\net461\win7-x64\Sciensa.Desafio.Web.exe
 C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\obj\Debug\net461\win7-x64\Sciensa.Desafio.Web.pdb
+C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\obj\Debug\net461\win7-x64\Sciensa.Desafio.Web.csprojResolveAssemblyReference.cache

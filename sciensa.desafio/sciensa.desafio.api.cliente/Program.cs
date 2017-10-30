@@ -22,6 +22,7 @@ namespace Sciensa.Desafio.API.Cliente
                 // an instance of the class is created in this host process.
 
                 ClienteContext.Initialize();
+                ContaContext.Initialize();
 
                 ServiceRuntime.RegisterServiceAsync("Sciensa.Desafio.API.ClienteType",
                     context => new ServiceCliente(context)).GetAwaiter().GetResult();
