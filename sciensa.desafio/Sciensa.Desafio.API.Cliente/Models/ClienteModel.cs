@@ -5,16 +5,21 @@ using System.Threading.Tasks;
 
 namespace Sciensa.Desafio.API.Cliente.Models
 {
-    public class Cliente
+    public class ClienteModel
     {
+        public ClienteModel()
+        {
+            Conta = new List<ContaModel>();
+        }
+
         public int Id { get; set; }
 
         public string Nome { get; set; }
 
-        public string CPF { get; set; }
+        public long CPF { get; set; }
 
         public string Endereco { get; set; }
 
-        public Conta Conta { get; set; }
+        public List<ContaModel> Conta { get; set; }
     }
 }

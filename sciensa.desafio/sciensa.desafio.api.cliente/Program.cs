@@ -1,4 +1,5 @@
 ﻿using Microsoft.ServiceFabric.Services.Runtime;
+using Sciensa.Desafio.API.Cliente.Models;
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -19,6 +20,8 @@ namespace Sciensa.Desafio.API.Cliente
                 // Registering a service maps a service type name to a .NET type.
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
+
+                ClienteContext.Initialize();
 
                 ServiceRuntime.RegisterServiceAsync("Sciensa.Desafio.API.ClienteType",
                     context => new ServiceCliente(context)).GetAwaiter().GetResult();

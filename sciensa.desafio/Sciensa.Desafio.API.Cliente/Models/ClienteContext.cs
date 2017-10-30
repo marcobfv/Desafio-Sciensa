@@ -1,22 +1,66 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Sciensa.Desafio.API.Cliente.Models
 {
-    public class ClienteContext : DbContext
+    public static class ClienteContext
     {
-        public ClienteContext(DbContextOptions<ClienteContext> options) :base(options)
-        { }
+        private static List<ClienteModel> _clientes;
+        private static int _id = 1;
 
-        public DbSet<Cliente> Clientes { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder builder)
+        public static List<ClienteModel> Clientes
         {
-            builder.Entity<Cliente>().HasKey(t => t.Id);
-            base.OnModelCreating(builder);
+            get { return _clientes; }
+        }
+
+        public static void Initialize()
+        {
+            if (Clientes != null) return;
+
+            _clientes = new List<ClienteModel>();
+        }
+
+        public static void IncluirCliente(ClienteModel cliente)
+        {
+            Initialize();
+
+            cliente.Id = _id++;
+
+            _clientes.Add(cliente);
+        }
+
+        public static bool AtualizarCliente(int id, ClienteModel cliente)
+        {
+            Initialize();
+
+            var result = _clientes.Where(it => it.Id.Equals(id)).Select(c =>
+            {
+                c.Nome = cliente.Nome;
+                c.CPF = cliente.CPF;
+                c.Endereco = cliente.Endereco;
+                return c;
+            })
+           .ToList();
+
+            if (result != null)
+                return true;
+
+            else
+                return false;
+        }
+
+        public static bool DeletarCliente(int id)
+        {
+            Initialize();
+
+            var cliente = _clientes.Where(it => it.Id.Equals(id)).First();
+
+            if (cliente != null)
+                _clientes.Remove(cliente);
+            else
+                return false;
+
+            return true;
         }
     }
 }

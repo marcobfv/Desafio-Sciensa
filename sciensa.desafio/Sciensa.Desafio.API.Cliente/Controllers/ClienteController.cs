@@ -3,41 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ClienteModel = Sciensa.Desafio.API.Cliente.Models;
+using Sciensa.Desafio.API.Cliente.Models;
+using Microsoft.ServiceFabric.Data;
 
 namespace Sciensa.Desafio.API.Cliente.Controllers
 {
     [Route("api/[controller]")]
     public class ClienteController : Controller
     {
-        public List<ClienteModel.Cliente> clientes = new List<Models.Cliente>();
-
-        // GET api/values
         [HttpGet]
-        public IEnumerable<ClienteModel.Cliente> Get()
+        public IEnumerable<ClienteModel> Get()
         {
-            return clientes;
+            return ClienteContext.Clientes;
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
-        public ClienteModel.Cliente Get(int id)
+        public ClienteModel Get(int id)
         {
-            return clientes.Where(c => c.Id.Equals(id)).FirstOrDefault();
+            return ClienteContext.Clientes.Where(c => c.Id.Equals(id)).FirstOrDefault();
         }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]ClienteModel.Cliente cliente)
+        [HttpPost("{*cliente}")]
+        public IActionResult Post([FromBody]ClienteModel cliente)
         {
-            clientes.Add(cliente);
+            ClienteContext.IncluirCliente(cliente);
+
+            return new OkResult();
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]ClienteModel.Cliente cliente)
+        public IActionResult Put(int id, [FromBody]ClienteModel cliente)
         {
-            
+            var result = ClienteContext.AtualizarCliente(id, cliente);
+
+            if (result)
+                return new OkResult();
+            else
+                return new NotFoundResult();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var result = ClienteContext.DeletarCliente(id);
+
+            if (result)
+                return new OkResult();
+            else
+                return new NotFoundResult();
         }
     }
 }

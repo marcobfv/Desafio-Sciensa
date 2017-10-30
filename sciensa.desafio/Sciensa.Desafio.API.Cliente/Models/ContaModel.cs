@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Sciensa.Desafio.API.Cliente.Models
 {
-    public class Conta
+    public class ContaModel
     {
         public int Id { get; set; }
 
