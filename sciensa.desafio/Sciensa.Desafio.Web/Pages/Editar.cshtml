@@ -20,10 +20,12 @@
                     <input id="nome" placeholder="Nome" type="text" />
                 </p>
                 <p>
-                    CPF: <h4 id="cpf" placeholder="CPF" type="text"  />
+                    CPF: 
+                    <input id="cpf" placeholder="CPF" type="text"  />
                 </p>
                 <p>
-                    Endereco: <h4 id="endereco" placeholder="Endereço" type="text"  />
+                    Endereco: 
+                    <input id="endereco" placeholder="Endereço" type="text"  />
                 </p>
             </div>
 
@@ -90,7 +92,43 @@
         }
     };
 
+    function alterarConta(button_edit) {
+        var row = $(button_edit).parents("tr");
+        var cols = row.children("td");
+
+        var _contaId = $($(cols[4]).children("input")[0]).data("id");
+
+        var sendJsonData = {
+            idCliente: idCliente,
+            agencia: $($(cols[0]).children("input")[0]).val(),
+            numero: $($(cols[1]).children("input")[0]).val(),
+            tipo: $($(cols[2]).children("input")[0]).val(),
+            saldo: $($(cols[3]).children("input")[0]).val(),
+        };
+
+        $.ajax({
+            type: "PUT",
+            url: "http://localhost:8080/api/conta/" + _contaId,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify(sendJsonData),
+            success: function () {
+                carregarCliente();
+                //alert("Cadastro efetuado com sucesso.");
+                //$('#novoModal').modal('toggle');
+                //document.location.reload();
+            },
+            error: function (error) {
+                var x = error;
+                alert("Conta alterada")
+                //alert('Falha????' + x.responseText);
+            }
+        });
+        carregarCliente();
+    }
+
     function carregarCliente() {
+
         $.ajax({
             type: "GET",
             url: "http://localhost:8080/api/cliente/" + idCliente,
@@ -100,9 +138,9 @@
                 $("#DIV").html('');
                 var DIV = '';
 
-                $("#nome").text(data.nome);
-                $("#cpf").text(data.cpf);
-                $("#endereco").text(data.endereco);
+                $("#nome").val(data.nome);
+                $("#cpf").val(data.cpf);
+                $("#endereco").val(data.endereco);
 
                 carregarContas(data.contas);
 
@@ -119,15 +157,15 @@
     }
 
     function carregarContas(contas) {
-       
+        $('#Table tbody').children('tr:not(:first)').remove();
         $.each(contas, function (i, item) {
                     var rows = "<tr>" +
                         "<td id='agenciatd'><input id='agencia' type='text' value='" + item.agencia + "'/></td>" +
-                        "<td id='numerotd'<input id='numero' type='text' value='" + item.numero + "'/></td>" +
+                        "<td id='numerotd'><input id='numero' type='text' value='" + item.numero + "'/></td>" +
                         "<td id='tipotd'><input id='tipo' type='text' value='" + item.tipo + "'/></td>" +
                         "<td id='saldotd'><input id='saldo' type='text' value='" + item.saldo + "'/></td>" +
                         "<td>" +
-                        "<input type='button' class='button' value='Alterar' data-id='" + item.id + "' onclick='contaDisplay(this);' />" +
+                        "<input type='button' class='button' value='Alterar' data-id='" + item.id + "' onclick='alterarConta(this);' />" +
                         "</td>" +
                         "</tr>";
                     $('#Table').append(rows);
@@ -140,6 +178,10 @@
         idCliente = getUrlParameter('id');
 
         carregarCliente();
+
+        $(window).focus(function () {
+            carregarCliente();
+        });
 
         $("#btnAdicionar").click(function () {
             var sendJsonData = {
@@ -164,10 +206,11 @@
                 },
                 error: function (error) {
                     var x = error;
-                    alert("Cliente cadastrado");
+                    alert("Conta cadastrada");
                     //alert('Falha????' + x.responseText);
                 }
             });
+            carregarCliente();
         });
     });
 </script>
