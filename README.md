@@ -13,7 +13,14 @@ REQUISITOS:
 
 - Executar o PowerShell como administrador e rodar o seguinte comando :
 
- Executar comando no Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force -Scope CurrentUser
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force -Scope CurrentUser
 
 
+
+INICIANDO PROJETO
+- Executar o Visual Studio como Administrador;
+- Executar o projeto(F5);
+- Aguardar o cluster do Service Fabric iniciar;
+- O Projeto WebAPI esta configurado na porta 8080;
+- O projeto Web para manipulação dos dados esta rodando na porta 8855;
 
