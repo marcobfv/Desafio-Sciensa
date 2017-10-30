@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Sciensa.Desafio.API.Cliente.Models;
 using Microsoft.ServiceFabric.Data;
+using Microsoft.AspNetCore.Cors;
 
 namespace Sciensa.Desafio.API.Cliente.Controllers
 {

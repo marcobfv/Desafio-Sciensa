@@ -33,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sciensa.Desafio.API.Cliente\Sciensa.Desafio.API.Cliente.csproj" />
+    <ProjectReference Include="..\Sciensa.Desafio.Web\Sciensa.Desafio.Web.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

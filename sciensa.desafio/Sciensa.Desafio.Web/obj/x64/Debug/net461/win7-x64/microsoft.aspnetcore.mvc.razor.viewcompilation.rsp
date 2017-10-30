@@ -1,0 +1,10 @@
+C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web
+--output-path=obj\x64\Debug\net461\win7-x64\
+--application-name=Sciensa.Desafio.Web
+--content-root=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\Error.cshtml
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\Index.cshtml
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\_Layout.cshtml
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\_ViewImports.cshtml
+--file=C:\projetos\sciensa\Desafio-Sciensa\sciensa.desafio\Sciensa.Desafio.Web\Pages\_ViewStart.cshtml

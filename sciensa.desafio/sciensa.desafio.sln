@@ -7,6 +7,8 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Sciensa.Desafio.SF.Cliente"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sciensa.Desafio.API.Cliente", "Sciensa.Desafio.API.Cliente\Sciensa.Desafio.API.Cliente.csproj", "{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sciensa.Desafio.Web", "Sciensa.Desafio.Web\Sciensa.Desafio.Web.csproj", "{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|x64.ActiveCfg = Release|Any CPU
 		{3EB0F70E-8229-4174-9E7B-45B75A81A6B9}.Release|x64.Build.0 = Release|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Debug|x64.Build.0 = Debug|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD81EE47-BEF2-4B69-88F9-CA11F583D0CF}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
