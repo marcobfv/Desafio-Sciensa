@@ -24,3 +24,10 @@ INICIANDO PROJETO
 - O Projeto WebAPI esta configurado na porta 8080;
 - O projeto Web para manipulação dos dados esta rodando na porta 8855;
 
+Após conclusão do registro das aplicações pelo Serice Fabric os seguintes links são funcionais:
+
+- Aplicação WEB:
+	http://localhost:8855/
+- WebAPI:
+	http://localhost:8080/api/cliente
+  	http://localhost:8080/api/conta
